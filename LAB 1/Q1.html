@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Ticket Booking</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Online Ticket Booking</h1>
+    <form>
+        <label for = "fname">Enter your name : </label>
+        <br>
+        <input type = "text" id = "fname" name = "ffname" placeholder="Full Name" required maxlength="25">
+        <br>
+        <label for = "email">Enter Email: </label>
+        <br>
+        <input type = "email" id = "mail" name = "maill" required autofocus value="test@example.com">
+        <br>
+        <label for = "passw">Enter Password: </label>
+        <br>
+        <input type = "password" id = "passw" name = "pass" required minlength="6">
+        <br>
+        <label for = "category">Select your category :</label>
+        <br>
+        <select id = "category" name = "cat" required>
+            <option value = "student">Student</option>
+            <option value = "employee">Employee</option>
+            <option value = "freelancer" selected>Freelancer</option>
+        </select>
+        <br>
+        <label for = "date">Select the event date :</label>
+        <br>
+        <input type = "date"  id = "date" name = "edate" required>
+        <br>
+        <label for = "tickets">Amount of tickets : </label>
+        <br>
+        <input type = "radio" name = "ticket" value = "1ticket"> 1 Ticket
+        <br>
+        <input type = "radio" name = "ticket" value = "2ticket" checked> 2 Tickets
+        <br>
+        <input type = "radio" name = "ticket" value = "3ticket"> 3 Tickets
+        <br>
+        <input type = "checkbox" name = "payment" required>Online payment
+        <br>
+        <textarea cols="30" rows="10" placeholder="If any notes"></textarea>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
